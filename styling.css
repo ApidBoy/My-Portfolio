@@ -1,0 +1,476 @@
+/* Start */
+
+/* Body Styling */
+*{
+    margin:2px;
+    padding:0;
+}
+body{
+    font-family: century gothic;
+    background:#111;
+    color: #fff;
+}
+/* Nav Bar: */
+ul{
+    float:left;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    background: #111;
+    border-radius: 10px;
+}
+ul li{
+    font-size: 22px;
+    list-style-type: none;
+    display:inline-block;
+    padding: 10px;
+    border:2px solid gold;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    margin: 7px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.7s ease;
+}
+.active{
+    color: #000;
+    background-color: gold;
+    border-color: #fff;
+    border-width: 4px;
+    font-weight: bold;
+}
+li:hover{
+    background-color: gold;
+    border-color: #fff;
+    transform: scale(1.2);
+}
+li a:hover{
+    color: #000;
+}
+/* Title Styling */
+#title{
+    font-size: 80px;
+    text-align: right;
+    overflow: hidden;
+    border-right: 4px solid gold;
+    white-space: nowrap;
+    margin: auto;
+    animation: 
+            typing 3.5s steps(50, end),
+            blink-caret .5s step-end infinite;
+}
+#a{
+    color:gold;
+}
+#apidax{
+    font-weight: bold;
+}
+#hr{
+    width:22%;
+    float: right;
+    animation: hr 2.7s 1.2s;
+}
+/* Animation */
+@keyframes hr {
+    50%{
+        width:40%;
+    }
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange}
+}
+/* Other Elements' Designing */
+#mypic{
+    transform:scale(0.6);
+    border-radius:50px;
+    animation:pic 3s;
+}
+@keyframes pic{
+    from{
+        opacity:0;
+    }
+}
+#myid{
+    display: flex;
+}
+#apid{
+    margin-top:180px;
+    margin-left:-50px;
+    font-size: 5em;
+    animation: apid 2.2s;
+    position:relative;
+    left:0;
+}
+@keyframes apid{
+    from{
+        opacity:0;
+        left:-100px;
+    }
+}
+#me{
+    margin-top:290px;
+    margin-left:-370px;
+    position:relative;
+    animation:me 2.2s;
+    top:0;
+}
+@keyframes me{
+    from{
+        opacity:0;
+        top:-50px;
+    }
+}
+#hr2{
+    margin-top:370px;
+    margin-left:-210px;
+    height:1px;
+    width: 500px;
+    animation: hr2 2.2s;
+}
+@keyframes hr2{
+    from{
+        width:0%;
+    }
+}
+#mywords{
+    margin-top:-60px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    padding: 50px;
+}
+#mw{
+    margin-left:16px;
+    font-size:3em;
+    font-weight: 100;
+}
+#mwp{
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 1.4em;
+}
+#cma{
+    font-size:70px;
+    font-family:"baskerville old face";
+}
+#mypg{
+    font-size:30px;
+    text-align: right;
+}
+#pgt{
+    text-align: center;
+    color:gold;
+    font-size: 40px;
+    margin-top:30px;
+}
+div #html,#css,#js,#py,#java,#kt,#sql,#cpp,#drt,#rb,#php{
+    height:40px;
+    border:3px solid #fff;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    transform: scale(0.7);
+    padding: 20px;
+}
+#phtml{
+    width:87%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#pcss{
+    width:56%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#pjs{
+    width:19%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+    color:#d2e002;
+}
+#ppy{
+    width:76%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#pjava{
+    width:30%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#pkt{
+    width:29%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#psql{
+    width:48%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#pcpp{
+    width:33%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#pdrt{
+    width:28%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#prb{
+    width:33%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#pphp{
+    width:29%;
+    height:35px;
+    float:left;
+    border-radius: 18px;
+}
+#mypic3{
+    height:480px;
+    width:378px;
+    border-radius: 20px;
+    margin:60px;
+    margin-top:90px;
+}
+#spd{
+    display:flex;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    margin-top:20px;
+}
+#pd{
+    margin-top:100px;
+    font-size:30px;
+}
+.pds{
+    padding-bottom:20px;
+}
+.dp{
+    height: 50px;
+    width:50px;
+    border-radius: 25px;
+    border:2px solid #fff;
+}
+.vst{
+    font-size:30px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin:20px;
+    width:40%;
+    border:2px solid #fff;
+    border-radius: 40px;
+}
+#vrd{
+    display: flex;
+}
+#vs{
+    font-size: 16px;
+}
+#vsv{
+    font-size: 32px;
+    color:gold;
+    margin-top: 20px;
+}
+#vsv2{
+    font-size: 32px;
+    color:gold;
+}
+#pt{
+    margin-left: 200px;
+    transform: scale(0.9);
+}
+#vst2{
+    text-align: center;
+}
+#fb{
+    height:90px;
+    width:160px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius:10px;
+    padding: 15px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+#fb:hover{
+    background-color: #0c4dc7;
+}
+#ig{
+    height:100px;
+    width:100px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius:10px;
+    padding: 15px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+#ig:hover{
+    background-color: #c717b8;
+}
+#tt{
+    height:100px;
+    width:100px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius:10px;
+    padding: 15px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+#tt:hover{
+    background-color: rgb(0, 183, 255);
+}
+#sl{
+    height:100px;
+    width:100px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius:10px;
+    padding: 15px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+#sl:hover{
+    background-color: grey;
+}
+#yt{
+    height:100px;
+    width:100px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius:10px;
+    padding: 15px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+#yt:hover{
+    background-color: rgb(206, 29, 29);
+}
+.sm{
+    text-align: center;
+    margin-top:40px;
+}
+#sm{
+    
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius:10px;
+    padding: 15px;
+    margin-left: 10px;
+}
+footer{
+    margin-top: 50px;
+}
+a{
+    outline: none;
+}
+#vt{
+    text-align: center;
+    color:gold;
+    font-size: 40px;
+    margin-top:70px;
+}
+::-webkit-scrollbar{
+    width:25px;
+}
+::-webkit-scrollbar-track{
+    border: 7px solid #333;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: gold;
+    border-radius: 3px;
+    
+}
+
+/* Responsive Design */
+
+@media(max-width:1200px){
+    nav{
+        display:none;
+    }
+    #hr{
+        width:100%;
+        animation: none;
+    }
+    #myid{
+        display:block;
+    }
+    #mypic{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    #apid{
+        position: absolute;
+        left:35%;
+        top:-8%;
+    }
+    #hr2{
+        display:none;
+    }
+    #me{
+        position:absolute;
+        left:50%;
+        display:none;
+    }
+    div #html,#css,#js,#py,#java,#kt,#sql,#cpp,#drt,#rb,#php{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #mypic3{
+        display:none;
+    }
+    .pds{
+        padding-left: 20px;
+    }
+    #pd{
+        margin-top:16px;
+    }
+    #vrd{
+        display: block;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .vst{
+        width:100%;
+        margin-left: 0;
+    }
+    #pt{
+        margin-left: 0;
+    }
+}
+
+/* End */
