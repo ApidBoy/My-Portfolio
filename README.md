@@ -1,2 +1,3 @@
 # My-Portfolio
-This is my portfolio website
+I'm Samarth Singh Bachhotiya and this is my portfolio website.
+It is not responsive yet but I'll try to make it so soon.. :)
